@@ -1,4 +1,4 @@
-<html>
+<!--<html>
   <head>
   </head>
 
@@ -20,5 +20,31 @@
     <p *ngFor="let num of lon">{{num}}</p>
     <br><br>
     <p *ngFor="let n of names">{{n}}</p>
+  </body>
+</html>-->
+
+<html>
+  <head>
+    <style>
+      #b1
+      {
+        text-align: center;
+        background: lightblue;
+        border-radius: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center;">To Do List</h1>
+    <br>
+    <div id="b1">
+      <br>
+      <p>Type the task & click on 'Add Task'</p>
+      <input type="text" [(ngModel)]="tdi" style="background-color:#ffffff;border-radius: 8px;border: none;height: 30px; width: 200px;color: #000000;"><br><br>
+      <button (click)= "addToDoList()" style="background-color:#406340;border-radius: 8px;border: none;height: 50px; width: 200px;color: #b5d6ab;">Add Task</button><br><br><br>
+      <li *ngFor="let item of lots" style="text-align: left;">{{item}}</li>
+      <br>
+      </div>
   </body>
 </html>
