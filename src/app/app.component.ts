@@ -25,6 +25,10 @@ export class AppComponent {
   addToDoList = () => {
     this.lots.push(this.tdi)
   }
+
+  deleteRow = (i: number) => {
+      this.lots.splice(i, 1)
+  }
 }
 
 
