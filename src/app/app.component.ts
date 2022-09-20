@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  count = -1;
+  lon = [1, 2, 3, 4, 5, 6, 7];
+  names = ["sash", "bash", "zash"];
+  increaseCount = () => {
+    ++this.count;
+  }
+
+  decreaseCount = () => {
+    --this.count;
+  }
 }
+
+
